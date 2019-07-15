@@ -211,7 +211,7 @@ vendor/lib64/libgeofence.so|c7250877898a17f4bfdc244f613dd1e1a9397cb6
 vendor/lib64/libizat_client_api.so|853e4ccd91718edac986f755fc9800603d3a284a
 vendor/lib64/libizat_core.so|381f72f4c0030f88e5acaf6a3498d9036fb30215
 vendor/lib64/liblbs_core.so|2dcf1cfffcc3db13b06c90feec6d81a7a8f7d428
--vendor/lib64/libloc_api_v02.so|e3dafec13d58ad2c1d7dfe5aad14371d5f47e295
+vendor/lib64/libloc_api_v02.so|e3dafec13d58ad2c1d7dfe5aad14371d5f47e295
 vendor/lib64/libloc_ds_api.so|158c9d75eb01b7ae55877ee9e9c9046ad3cafea8
 vendor/lib64/libloc_externalDr.so|0527ae9d0bc5b67a21f337cba66f2e9d89f7383b
 vendor/lib64/liblocationservice.so|f9e6a94c260abafa857d2bcc96f23adef56527e7
@@ -321,6 +321,14 @@ vendor/bin/ipacm-diag|9300f8da22941c2bfacc2ff96f83f2beebd4dcc1
 # Keystore - from Tissot PKQ1.180917.001/V10.0.10.0.PDHMIXM
 vendor/lib/hw/keystore.msm8953.so|fdfa414efe6205bfd7750726ae730e4bd3c1ba00
 vendor/lib64/hw/keystore.msm8953.so|f71f1439c9c356ce05d88b876253b4e3dcb10f4b
+
+# Keymaster - from Bardock Pro
+vendor/lib64/hw/android.hardware.keymaster@3.0-impl.so:vendor/lib64/hw/android.hardware.keymaster@3.0-impl.so|9d855636cd20177f6fdaa47a9a45260330ed901b
+lib64/libsoftkeymasterdevice.so:vendor/lib64/libsoftkeymasterdevice-v27.so|2095d5c1c1600c9f1c714b102b4dccef00109fe1
+lib64/libkeymaster_messages.so:vendor/lib64/libkeymaster_messages-v27.so|4a37f2a5f1f208348c93243a58f0eaea457268e3
+lib64/libkeymaster_portable.so:vendor/lib64/libkeymaster_portable-v27.so|32771663c29fa4b8de3086f7c18eddd8dd586c17
+lib64/libkeymaster_staging.so:vendor/lib64/libkeymaster_staging-v27.so|62ae7af0ad77a3de31111a64da24c2329785e3d4
+lib64/libsoftkeymaster.so:vendor/lib64/libsoftkeymaster-v27.so|5704b8420586613635def323ca2c28a0f6ded59a
 
 # Listen - from Tissot PKQ1.180917.001/V10.0.10.0.PDHMIXM
 vendor/lib/hw/sound_trigger.primary.msm8953.so|0e716aae6fe6fc4a8b9553953765f64614647e7d
@@ -611,8 +619,7 @@ vendor/lib64/libthermalioctl.so|6eed5b8ca6989809eac27abd4af19bbd6f3845ee
 # Time services - from Tissot PKQ1.180917.001/V10.0.10.0.PDHMIXM
 -vendor/app/TimeService/TimeService.apk|78109530538aa8fb533ad288c9d356c57481a10e
 vendor/bin/time_daemon|bc58af8ed0cc94708aa75372565f4251991ab123
--vendor/lib/libtime_genoff.so|88a80bd92d268d533292d46da22eb96498e40292
--vendor/lib64/libtime_genoff.so|8f4c1f9ace6af463b241b130d6872b5d39cc7b2a
+vendor/lib64/libtime_genoff.so|8f4c1f9ace6af463b241b130d6872b5d39cc7b2a
 
 # TUI - from Tissot PKQ1.180917.001/V10.0.10.0.PDHMIXM
 lib/vendor.qti.hardware.tui_comm@1.0.so|03a2143899def287dd48b2290f769b4eebdd61d0
