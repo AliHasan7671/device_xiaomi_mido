@@ -43,4 +43,4 @@ BUILD_FINGERPRINT := "xiaomi/mido/mido:7.0/NRD90M/V8.5.4.0.NCFMIED:user/release-
 
 # Use Custom OTA
 PRODUCT_PROPERTY_OVERRIDES += \
-    lineage.updater.uri=https://raw.githubusercontent.com/AliHasan7671/lineage-OTA/master/mido.json
+    lineage.updater.uri=https://downloads.sourceforge.net/project/lineageos16-mido/mido.json
