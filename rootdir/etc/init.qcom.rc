@@ -100,8 +100,6 @@ on boot
     chmod 0660 /sys/module/radio_iris_transport/parameters/fmsmd_set
     chown system system /sys/devices/soc/78b7000.i2c/i2c-3/3-0038/enable_dt2w
     chmod 0664 /sys/devices/soc/78b7000.i2c/i2c-3/3-0038/enable_dt2w
-    chown system system /proc/touchpanel/enable_dt2w
-    chmod 0664 /proc/touchpanel/enable_dt2w
 
     # Vibrator permissions
     chown root system /sys/devices/virtual/timed_output/vibrator/vtg_level
@@ -510,6 +508,5 @@ on property:dev.bootcomplete=1
     setprop sys.io.scheduler "bfq"
 
 on property:init.svc.qcom-post-boot=stopped
-    # Set min gpu freq as 320mhz
-    write /sys/class/kgsl/kgsl-3d0/devfreq/min_freq 320000000
+    # Reduce swappiness
     write /proc/sys/vm/swappiness 10
