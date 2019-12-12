@@ -387,7 +387,15 @@ PRODUCT_PACKAGES += \
     hostapd \
     libwifi-hal-qcom \
     wpa_supplicant \
-    wpa_supplicant.conf
+    wpa_supplicant.conf \
+    hostapd_default.conf \
+    p2p_supplicant_overlay.conf \
+    wpa_supplicant_overlay.conf \
+    WCNSS_qcom_cfg.ini
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/wifi/hostapd:vendor/bin/hw/hostapd \
+    $(LOCAL_PATH)/wifi/hostpad.android.rc:vendor/etc/init/hostpad.android.rc
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/wifi/p2p_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/p2p_supplicant_overlay.conf \
